@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { PadreComponent } from "./components/padre/padre.component";
 import { NgxDyncmpModule } from '@flywine93/ngx-dyncmp';
 import { HijoComponent } from './components/hijo/hijo.component';
+import { FormlyBootstrapModule } from "@ngx-formly/bootstrap";
+import { FormlyModule } from "@ngx-formly/core";
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HijoComponent } from './components/hijo/hijo.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    NgxDyncmpModule
+    NgxDyncmpModule,
+     FormlyModule.forRoot(),
+    FormlyBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent],
