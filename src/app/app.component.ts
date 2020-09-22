@@ -10,8 +10,7 @@ import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.com
 })
 export class AppComponent {
   @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
-  regConfig: FieldConfig[] = [
-    
+  regConfig: FieldConfig[] = [    
     {
       type: "select",
       label: "Cuantitativo",
@@ -35,5 +34,8 @@ export class AppComponent {
     }
   ];
 
-  submit(value: any) {}
+  submit(value: any) {
+  console.log(value)
+
+  }
 }

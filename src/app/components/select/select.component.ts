@@ -9,7 +9,7 @@ import { FieldConfig } from "../../field.interface";
       <select class="form-control select required" required="required" aria-required="true"
           name="" id="" [formControlName]="field.name">
           <option value=""></option>
-          <option *ngFor="let item of field.options" [value]="item">{{item}}</option>
+          <option *ngFor="let opt of field.options" [value]="opt.key">{{opt.value}}</option>
       </select>
 
       <ng-container *ngFor="let validation of field.validations;">
