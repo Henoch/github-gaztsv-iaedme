@@ -4,14 +4,6 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { InputComponent } from "./components/input/input.component";
-import { ButtonComponent } from "./components/button/button.component";
-import { SelectComponent } from "./components/select/select.component";
-import { DateComponent } from "./components/date/date.component";
-import { RadiobuttonComponent } from "./components/radiobutton/radiobutton.component";
-import { CheckboxComponent } from "./components/checkbox/checkbox.component";
-import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
-import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
 import { PadreComponent } from "./components/padre/padre.component";
 import { NgxDyncmpModule } from '@flywine93/ngx-dyncmp';
 import { HijoComponent } from './components/hijo/hijo.component';
@@ -19,11 +11,7 @@ import { HijoComponent } from './components/hijo/hijo.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ButtonComponent,
-    SelectComponent,
-    DynamicFieldDirective,
-    DynamicFormComponent,
+    AppComponent, 
     PadreComponent,
     HijoComponent    
   ],
@@ -36,13 +24,8 @@ import { HijoComponent } from './components/hijo/hijo.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [
-   
-    ButtonComponent,
-    SelectComponent,
-    HijoComponent,
-    
-   
+  entryComponents: [   
+    HijoComponent,   
   ]
 })
 export class AppModule {}
