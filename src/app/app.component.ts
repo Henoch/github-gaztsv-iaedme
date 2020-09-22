@@ -11,6 +11,8 @@ import { HijoComponent } from "./components/hijo/hijo.component";
 })
 export class AppComponent {
   @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
+  component = HijoComponent;
+
   regConfig: FieldConfig[] = [    
     {
       type: "select",
@@ -39,14 +41,11 @@ export class AppComponent {
   console.log(value)
 
   }
-
-
-   component = HijoComponent;
+ 
 
   todoInputs = {
-    todo: {
-      checked: false,
-      text: "Do Homework"
+    solicitud: {
+      titulo: 'Criterios generales'
     }
   };
 

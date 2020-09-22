@@ -1,12 +1,2 @@
-<ng-container
-    [ngxDyncCmp]="component"
-    [inputs]="todoInputs"
-    [outputs]="todoOutputs">
+<ng-container [ngxDyncCmp]="component" [inputs]="todoInputs" [outputs]="todoOutputs">
 </ng-container>
-
-
-		<dynamic-form [fields]="regConfig" (submit)="submit($event)">
-		</dynamic-form>
-		<div class="margin-top">
-			{{ form.value | json }}
-		</div>
