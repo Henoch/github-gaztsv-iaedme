@@ -5,18 +5,8 @@
 </ng-container>
 
 
-<div class="card mb-5">
-	<div class="card-header"> {{titulo}} </div>
-	<div class="card-body">
-		<h5 class="mb-5">Criterios generales</h5>
-
 		<dynamic-form [fields]="regConfig" (submit)="submit($event)">
 		</dynamic-form>
 		<div class="margin-top">
 			{{ form.value | json }}
 		</div>
-
-		<div class="row mb-5">
-		</div>
-		
-</div>
