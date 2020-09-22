@@ -24,7 +24,7 @@ export class AppComponent {
         {
           name: "required",
           validator: Validators.required,
-          message: "Date of Birth Required"
+          message: "Cuantitativo es requerido"
         }
       ]
     },
