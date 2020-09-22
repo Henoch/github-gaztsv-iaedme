@@ -11,7 +11,10 @@ import { HijoComponent } from "./components/hijo/hijo.component";
 })
 export class AppComponent {
   @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
-  component = HijoComponent;
+  component1 = HijoComponent;
+  component2 = HijoComponent;
+  component3 = HijoComponent;
+  component4 = HijoComponent;
 
   regConfig: FieldConfig[] = [    
     {
@@ -43,13 +46,49 @@ export class AppComponent {
   }
  
 
-  todoInputs = {
+  todoInputs1 = {
     solicitud: {
-      titulo: 'Criterios generales'
+      titulo: 'Criterios generales 1'
     }
   };
 
-  todosOutputs = {
+  todosOutputs1 = {
+    selected: (e: any) => {
+      console.log(e);
+    }
+  };
+
+   todoInputs2 = {
+    solicitud: {
+      titulo: 'Criterios generales 2'
+    }
+  };
+
+  todosOutputs2 = {
+    selected: (e: any) => {
+      console.log(e);
+    }
+  };
+
+   todoInputs3 = {
+    solicitud: {
+      titulo: 'Criterios generales 3'
+    }
+  };
+
+  todosOutputs3 = {
+    selected: (e: any) => {
+      console.log(e);
+    }
+  };
+
+   todoInputs4 = {
+    solicitud: {
+      titulo: 'Criterios generales 4'
+    }
+  };
+
+  todosOutputs4 = {
     selected: (e: any) => {
       console.log(e);
     }

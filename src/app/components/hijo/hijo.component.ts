@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./hijo.component.css']
 })
 export class HijoComponent implements OnInit {
-@Input() solicitud: {titulo: boolean};
+@Input() solicitud: {titulo: string};
   constructor() { }
 
   ngOnInit() {
@@ -15,8 +15,7 @@ export class HijoComponent implements OnInit {
  @Output() selected = new EventEmitter<string>();
  
  change() {
-   console.log('click en el btn')
-    this.selected.emit('okokokokok');
+    this.selected.emit(this.solicitud.titulo);
   }
   
 }
