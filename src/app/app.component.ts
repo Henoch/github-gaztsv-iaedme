@@ -14,8 +14,8 @@ export class AppComponent {
     
     {
       type: "select",
-      label: "Country",
-      name: "country",
+      label: "Cuantitativo",
+      name: "cuantitativo",
       value: "UK",
       options: ["India", "UAE", "UK", "US"],
       validations: [
@@ -25,6 +25,10 @@ export class AppComponent {
           message: "Date of Birth Required"
         }
       ]
+    },
+     {
+      type: "button",
+      label: "Save"
     }
   ];
 
