@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./hijo.component.css']
 })
 export class HijoComponent implements OnInit {
-@Input() todo: {titulo: boolean};
+@Input() solicitud: {titulo: boolean};
   constructor() { }
 
   ngOnInit() {
