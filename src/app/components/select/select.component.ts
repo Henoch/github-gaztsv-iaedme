@@ -13,8 +13,8 @@ import { FieldConfig } from "../../field.interface";
       </select>
 
       <ng-container *ngFor="let validation of field.validations;">
-<div *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</div>
-</ng-container>
+        <div *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</div>
+      </ng-container>
   </div>
 `,
   styles: []
