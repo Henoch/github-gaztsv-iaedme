@@ -20,14 +20,15 @@ import { DynamicComponentModule } from 'ng-dynamic-component';
     ButtonComponent,
     SelectComponent,
     DynamicFieldDirective,
-    DynamicFormComponent,
-    DynamicComponentModule
+    DynamicFormComponent
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    DynamicComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent],
