@@ -12,7 +12,11 @@ export class HijoComponent implements OnInit {
   ngOnInit() {
   }
 
- @Output() selected = new EventEmitter<{checked: boolean, text: string}>();
+ @Output() selected = new EventEmitter<string>();
  
+ change() {
+   console.log('click en el btn')
+    this.selected.emit('okokokokok');
+  }
   
 }

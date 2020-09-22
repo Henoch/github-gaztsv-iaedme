@@ -1,20 +1,8 @@
-<ng-container
-    [ngxDyncCmp]="component"
-    [inputs]="todoInputs"
-    [outputs]="todoOutputs">
-</ng-container>
-
 
 <div class="card mb-5">
 	<div class="card-header"> {{solicitud.titulo}} </div>
 	<div class="card-body">
-		<h5 class="mb-5">Criterios generales</h5>
-
-		<dynamic-form [fields]="regConfig" (submit)="submit($event)">
-		</dynamic-form>
-		<div class="margin-top">
-			{{ form.value | json }}
-		</div>
+	
 
 		<div class="row mb-5">
 		</div>
@@ -58,13 +46,6 @@
 	</div>
 	<hr />
 	<div class="mb-5 col-12">
-		<button name="button" type="button" class="btn btn btn-success float-right"><i class="fa fa-save"></i> GUARDAR</button>
+		<button name="button" type="button" ng-click="change()" class="btn btn btn-success float-right"><i class="fa fa-save"></i> GUARDAR</button>
 	</div>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " (change)="change($event)" type="checkbox" id="defaultCheck1" [(ngModel)]="todo.checked">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
 </div>
