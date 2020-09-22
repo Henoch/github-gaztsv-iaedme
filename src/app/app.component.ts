@@ -30,7 +30,7 @@ export class AppComponent {
     },
      {
       type: "button",
-      label: "Save"
+      label: "GUARDAR"
     }
   ];
 
