@@ -1,12 +1,56 @@
-<div class="form">
-  <div style="text-align:center">
-    <h1>
-      Formulario
-    </h1>
-  </div>
-  <dynamic-form [fields]="regConfig" (submit)="submit($event)">
-  </dynamic-form>
-  <div class="margin-top">
-    {{ form.value | json }}
-  </div>
+<div class="card mb-5">
+	<div class="card-header"> {{titulo}} </div>
+	<div class="card-body">
+		<h5 class="mb-5">Criterios generales</h5>
+
+		<dynamic-form [fields]="regConfig" (submit)="submit($event)">
+		</dynamic-form>
+		<div class="margin-top">
+			{{ form.value | json }}
+		</div>
+
+		<div class="row mb-5">
+		</div>
+		<h5 class="mb-5">Principios de ordenamiento territorial integral</h5>
+		<div class="row mb-5">
+			<div class="col-12 col-lg-6 form-group">
+				<label for="n-solicitud">Análisis:</label>
+				<select class="form-control select required" required="required" aria-required="true" name="" id="">
+                    <option value=""></option>
+                </select>
+			</div>
+			<div class="col-12 col-lg-6 form-group">
+				<label for="tipo-modalidad">Contribuye a la equidad:</label>
+				<select class="form-control select required" required="required" aria-required="true" name="" id="">
+                    <option value=""></option>
+                </select>
+			</div>
+			<div class="col-12 col-lg-6 form-group">
+				<label for="tipo-modalidad">Promueve un ordenamiento territorial compacto / usos mixtos:</label>
+				<select class="form-control select required" required="required" aria-required="true" name="" id="">
+                    <option value=""></option>
+                </select>
+			</div>
+			<div class="col-12 col-lg-6 form-group">
+				<label for="tipo-modalidad">Integra la sustentabilidad y resiliencia:</label>
+				<select class="form-control select required" required="required" aria-required="true" name="" id="">
+                    <option value=""></option>
+                </select>
+			</div>
+			<div class="col-12 col-lg-6 form-group">
+				<label for="tipo-modalidad">Innovación:</label>
+				<select class="form-control select required" required="required" aria-required="true" name="" id="">
+                    <option value=""></option>
+                </select>
+			</div>
+			<div class="col-12  form-group">
+				<label for="n-solicitud">Comentarios:</label>
+				<textarea class="form-control text required" presence="true" maxlength="100000" required="required" aria-required="true" name="" id=""></textarea>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="mb-5 col-12">
+		<button name="button" type="button" class="btn btn btn-success float-right"><i class="fa fa-save"></i> GUARDAR</button>
+	</div>
 </div>

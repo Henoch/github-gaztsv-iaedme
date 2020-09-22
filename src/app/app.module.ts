@@ -12,6 +12,7 @@ import { RadiobuttonComponent } from "./components/radiobutton/radiobutton.compo
 import { CheckboxComponent } from "./components/checkbox/checkbox.component";
 import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
 import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
+import { DynamicComponentModule } from 'ng-dynamic-component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.com
     ButtonComponent,
     SelectComponent,
     DynamicFieldDirective,
-    DynamicFormComponent
+    DynamicFormComponent,
+    DynamicComponentModule
   ],
   imports: [
     BrowserModule,

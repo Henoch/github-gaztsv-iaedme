@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { ChangeDetectorRef, Component, HostBinding, OnInit } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { FieldConfig } from "../../field.interface";
 @Component({
@@ -20,8 +20,16 @@ import { FieldConfig } from "../../field.interface";
   styles: []
 })
 export class SelectComponent implements OnInit {
+
+  someField: boolean = false;
+  // alternatively also the host parameter in the @Component()` decorator can be used
+  @HostBinding('class.col-6') someField: boolean = false;
+
   field: FieldConfig;
   group: FormGroup;
-  constructor() {}
-  ngOnInit() {}
+  constructor(private cdRef:ChangeDetectorRef) {}
+  ngOnInit() {
+        this.someField = true; // set class `someClass` on `<body>`
+    //this.cdRef.detectChanges(); 
+  }
 }

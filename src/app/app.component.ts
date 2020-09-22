@@ -27,6 +27,86 @@ export class AppComponent {
           message: "Cuantitativo es requerido"
         }
       ]
+    },{
+      type: "select",
+      label: "Cuantitativo",
+      name: "cuantitativo",
+      value: null,
+      options: [
+         {key: '1',  value: 'Sí'},
+          {key: '2',  value: 'No'},
+      ],
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Cuantitativo es requerido"
+        }
+      ]
+    },{
+      type: "select",
+      label: "Cuantitativo",
+      name: "cuantitativo",
+      value: null,
+      options: [
+         {key: '1',  value: 'Sí'},
+          {key: '2',  value: 'No'},
+      ],
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Cuantitativo es requerido"
+        }
+      ]
+    },{
+      type: "select",
+      label: "Cuantitativo",
+      name: "cuantitativo",
+      value: null,
+      options: [
+         {key: '1',  value: 'Sí'},
+          {key: '2',  value: 'No'},
+      ],
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Cuantitativo es requerido"
+        }
+      ]
+    },{
+      type: "select",
+      label: "Cuantitativo",
+      name: "cuantitativo",
+      value: null,
+      options: [
+         {key: '1',  value: 'Sí'},
+          {key: '2',  value: 'No'},
+      ],
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Cuantitativo es requerido"
+        }
+      ]
+    },{
+      type: "select",
+      label: "Cuantitativo",
+      name: "cuantitativo",
+      value: null,
+      options: [
+         {key: '1',  value: 'Sí'},
+          {key: '2',  value: 'No'},
+      ],
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Cuantitativo es requerido"
+        }
+      ]
     },
      {
       type: "button",
