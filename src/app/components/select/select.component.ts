@@ -5,12 +5,16 @@ import { FieldConfig } from "../../field.interface";
   selector: "app-select",
   template: `
   <div class="col-12 col-lg-4 col-md-6 form-group" [formGroup]="group">
-      <label >field.label</label>
+      <label>{{field.label}}</label>
       <select class="form-control select required" required="required" aria-required="true"
           name="" id="" [formControlName]="field.name">
           <option value=""></option>
           <option *ngFor="let item of field.options" [value]="item">{{item}}</option>
       </select>
+
+      <ng-container *ngFor="let validation of field.validations;">
+<div *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</div>
+</ng-container>
   </div>
 `,
   styles: []
