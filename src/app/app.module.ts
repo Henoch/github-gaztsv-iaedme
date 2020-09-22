@@ -13,6 +13,8 @@ import { CheckboxComponent } from "./components/checkbox/checkbox.component";
 import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
 import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
 import { PadreComponent } from "./components/padre/padre.component";
+import { NgxDyncmpModule } from '@flywine93/ngx-dyncmp';
+import { HijoComponent } from './components/hijo/hijo.component';
 
 
 @NgModule({
@@ -22,13 +24,15 @@ import { PadreComponent } from "./components/padre/padre.component";
     SelectComponent,
     DynamicFieldDirective,
     DynamicFormComponent,
-    PadreComponent    
+    PadreComponent,
+    HijoComponent    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxDyncmpModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -36,6 +40,7 @@ import { PadreComponent } from "./components/padre/padre.component";
    
     ButtonComponent,
     SelectComponent,
+    HijoComponent,
     
    
   ]
