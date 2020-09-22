@@ -12,7 +12,8 @@ import { RadiobuttonComponent } from "./components/radiobutton/radiobutton.compo
 import { CheckboxComponent } from "./components/checkbox/checkbox.component";
 import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
 import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
-import { DynamicComponentModule } from 'ng-dynamic-component';
+import { PadreComponent } from "./components/padre/padre.component";
+
 
 @NgModule({
   declarations: [
@@ -20,15 +21,14 @@ import { DynamicComponentModule } from 'ng-dynamic-component';
     ButtonComponent,
     SelectComponent,
     DynamicFieldDirective,
-    DynamicFormComponent
-    
+    DynamicFormComponent,
+    PadreComponent    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule,
-    DynamicComponentModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
