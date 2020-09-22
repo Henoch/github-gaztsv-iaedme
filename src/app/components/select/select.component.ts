@@ -4,11 +4,14 @@ import { FieldConfig } from "../../field.interface";
 @Component({
   selector: "app-select",
   template: `
-<mat-form-field class="demo-full-width margin-top" [formGroup]="group">
-<mat-select [placeholder]="field.label" [formControlName]="field.name">
-<mat-option *ngFor="let item of field.options" [value]="item">{{item}}</mat-option>
-</mat-select>
-</mat-form-field>
+  <div class="col-12 col-lg-4 col-md-6 form-group" [formGroup]="group">
+      <label >field.label</label>
+      <select class="form-control select required" required="required" aria-required="true"
+          name="" id="" [formControlName]="field.name">
+          <option value=""></option>
+          <option *ngFor="let item of field.options" [value]="item">{{item}}</option>
+      </select>
+  </div>
 `,
   styles: []
 })
