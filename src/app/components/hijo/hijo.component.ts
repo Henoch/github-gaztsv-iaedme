@@ -47,7 +47,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -59,7 +59,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -71,7 +71,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -83,7 +83,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         }
       ]
@@ -105,7 +105,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -117,7 +117,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -129,7 +129,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
@@ -141,11 +141,11 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
-          className: "col-12 col-lg-6 form-group",
+          className: "col-12 form-group",
           key: "redaccion",
           type: "textarea",
           templateOptions: {

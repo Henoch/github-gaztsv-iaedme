@@ -8,8 +8,11 @@ import { PadreComponent } from "./components/padre/padre.component";
 import { NgxDyncmpModule } from '@flywine93/ngx-dyncmp';
 import { HijoComponent } from './components/hijo/hijo.component';
 import { FormlyBootstrapModule } from "@ngx-formly/bootstrap";
-import { FormlyModule } from "@ngx-formly/core";
+import { FormlyFieldConfig, FormlyModule } from "@ngx-formly/core";
 
+export function ValidatorMessage(err, field: FormlyFieldConfig) {
+  return `"${field.templateOptions.label}" es un campo requerido`;
+}
 
 @NgModule({
   declarations: [
@@ -23,7 +26,11 @@ import { FormlyModule } from "@ngx-formly/core";
     ReactiveFormsModule,
     FormsModule,
     NgxDyncmpModule,
-     FormlyModule.forRoot(),
+     FormlyModule.forRoot({
+      validationMessages: [
+        { name: 'required', message: ValidatorMessage  },
+      ],
+    }),
     FormlyBootstrapModule
   ],
   providers: [],
