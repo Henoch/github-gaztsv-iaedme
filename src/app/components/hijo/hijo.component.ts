@@ -28,16 +28,65 @@ export class HijoComponent implements OnInit {
       fieldGroup: [
         {
           className: "col-12 col-lg-6 form-group",
-          key: "Select",
+          key: "cuantitativo",
           type: "select",
           templateOptions: {
-            label: "Select",
+            label: "Cuantitativo",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "actualizados",
+          type: "select",
+          templateOptions: {
+            label: "Datos actualizados",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "congruencia",
+          type: "select",
+          templateOptions: {
+            label: "Congruencia documento-mapa",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "congruenciadoc",
+          type: "select",
+          templateOptions: {
+            label: "Congruencia de datos en documentos",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "redaccion",
+          type: "select",
+          templateOptions: {
+            label: "Redacción y estilo",
             placeholder: "",
             description: "",
             required: true,
             options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         }
+        
       ]
     }
   ];
