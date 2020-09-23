@@ -86,7 +86,75 @@ export class HijoComponent implements OnInit {
             options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         }
-        
+      ]
+    },
+    {
+      className: "section-label",
+      template:
+        "<h5 class='mb-5'>Principios de ordenamiento territorial integral</h5>"
+    },
+    {
+      fieldGroupClassName: "row mb-5",
+      fieldGroup: [
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "analisis",
+          type: "select",
+          templateOptions: {
+            label: "Análisis",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "equidad",
+          type: "select",
+          templateOptions: {
+            label: "Contribuye a la equidad",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "ordenamiento",
+          type: "select",
+          templateOptions: {
+            label: "Promueve un ordenamiento territorial compacto / usos mixtos",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "innovacion",
+          type: "select",
+          templateOptions: {
+            label: "Innovación",
+            placeholder: "",
+            description: "",
+            required: true,
+            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+          }
+        },
+        {
+          className: "col-12 col-lg-6 form-group",
+          key: "redaccion",
+          type: "inputtext",
+          templateOptions: {
+            label: "Comentarios",
+            placeholder: "",
+            description: "",
+            required: true
+          }
+        }
       ]
     }
   ];
