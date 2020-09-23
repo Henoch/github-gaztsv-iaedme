@@ -12,7 +12,13 @@ export class AppComponent {
   component1 = HijoComponent;
   component2 = HijoComponent;
   
+ counter = this.tabs.length + 1;
+  active = '1';
 
+  categoria: {key: string, value: string}[] =  [
+    {key: '1',  value: 'Tab 1'},
+     {key: '2',  value: 'tab 2'},
+ ];
 
   todoInputs1 = {
     solicitud: {

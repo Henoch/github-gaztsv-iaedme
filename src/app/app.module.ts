@@ -9,6 +9,7 @@ import { NgxDyncmpModule } from '@flywine93/ngx-dyncmp';
 import { HijoComponent } from './components/hijo/hijo.component';
 import { FormlyBootstrapModule } from "@ngx-formly/bootstrap";
 import { FormlyFieldConfig, FormlyModule } from "@ngx-formly/core";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 export function ValidatorMessage(err, field: FormlyFieldConfig) {
   return `"${field.templateOptions.label}" es un campo requerido`;
@@ -31,7 +32,8 @@ export function ValidatorMessage(err, field: FormlyFieldConfig) {
         { name: 'required', message: ValidatorMessage  },
       ],
     }),
-    FormlyBootstrapModule
+    FormlyBootstrapModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],

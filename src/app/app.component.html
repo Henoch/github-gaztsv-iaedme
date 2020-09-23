@@ -3,3 +3,29 @@
 
 <ng-container [ngxDyncCmp]="component2" [inputs]="todoInputs2" [outputs]="todosOutputs2">
 </ng-container>
+
+
+
+
+
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li *ngFor="let id of categoria" [ngbNavItem]="id.key">
+      <a ngbNavLink>
+        Tab {{ id.value }}
+       
+      </a>
+      <ng-template ngbNavContent>
+        <p>Tab {{ id.key }} content</p>
+
+        <ng-template appReceptor></ng-template>
+      </ng-template>
+    </li>
+    
+  </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  
+  <pre>Active: {{ active }}</pre>
+
+
+
