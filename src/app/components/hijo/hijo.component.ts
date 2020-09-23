@@ -35,7 +35,7 @@ export class HijoComponent implements OnInit {
             placeholder: "",
             description: "",
             required: true,
-            options: [{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
+            options: [{ value: null, label: "" },{ value: 1, label: "Sí" }, { value: 2, label: "No" }]
           }
         },
         {
