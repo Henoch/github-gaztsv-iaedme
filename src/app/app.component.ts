@@ -11,8 +11,7 @@ import { HijoComponent } from "./components/hijo/hijo.component";
 export class AppComponent {
   component1 = HijoComponent;
   component2 = HijoComponent;
-  component3 = HijoComponent;
-  component4 = HijoComponent;
+  
 
 
   todoInputs1 = {
@@ -38,29 +37,4 @@ export class AppComponent {
       console.log(e);
     }
   };
-
-   todoInputs3 = {
-    solicitud: {
-      titulo: 'Criterios generales 3'
-    }
-  };
-
-  todosOutputs3 = {
-    selected: (e: any) => {
-      console.log(e);
-    }
-  };
-
-   todoInputs4 = {
-    solicitud: {
-      titulo: 'Criterios generales 4'
-    }
-  };
-
-  todosOutputs4 = {
-    selected: (e: any) => {
-      console.log(e);
-    }
-  };
-
 }

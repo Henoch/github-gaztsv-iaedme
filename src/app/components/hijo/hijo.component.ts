@@ -147,12 +147,12 @@ export class HijoComponent implements OnInit {
         {
           className: "col-12 col-lg-6 form-group",
           key: "redaccion",
-          type: "inputtext",
+          type: "textarea",
           templateOptions: {
             label: "Comentarios",
             placeholder: "",
             description: "",
-            required: true
+            required: true,
           }
         }
       ]
