@@ -1,69 +1,16 @@
-
 <div class="card mb-5">
 	<div class="card-header"> {{solicitud.titulo}} </div>
 	<div class="card-body">
-    <h5 class="mb-5">Criterios generales</h5>
-	<form [formGroup]="form" >
-        <formly-form
-          [form]="form"
-          [model]="model"
-          [fields]="fields">
-        </formly-form>   
-
-        <button class="btn btn-primary"  (click)="submit()"  type="submit">
-          Guardar
-        </button>
-        &nbsp;
-        <button class="btn btn-danger" type="reset">
-          Limpiar
-        </button>   
-      </form>
-
-       
+		<h5 class="mb-5">Criterios generales</h5>
+		<form [formGroup]="form">
+			<formly-form [form]="form" [model]="model" [fields]="fields">
+			</formly-form>
 
 
-		<div class="row mb-5">
-		</div>
-		<h5 class="mb-5">Principios de ordenamiento territorial integral</h5>
-		<div class="row mb-5">
-			<div class="col-12 col-lg-6 form-group">
-				<label for="n-solicitud">Análisis:</label>
-				<select class="form-control select required" required="required" aria-required="true" name="" id="">
-                    <option value=""></option>
-                </select>
+			<div class="mb-5 col-12">
+				<button name="button" type="button" (click)="submit()"  class="btn btn btn-success float-right"><i class="fa fa-save"></i> GUARDAR</button>
 			</div>
-			<div class="col-12 col-lg-6 form-group">
-				<label for="tipo-modalidad">Contribuye a la equidad:</label>
-				<select class="form-control select required" required="required" aria-required="true" name="" id="">
-                    <option value=""></option>
-                </select>
-			</div>
-			<div class="col-12 col-lg-6 form-group">
-				<label for="tipo-modalidad">Promueve un ordenamiento territorial compacto / usos mixtos:</label>
-				<select class="form-control select required" required="required" aria-required="true" name="" id="">
-                    <option value=""></option>
-                </select>
-			</div>
-			<div class="col-12 col-lg-6 form-group">
-				<label for="tipo-modalidad">Integra la sustentabilidad y resiliencia:</label>
-				<select class="form-control select required" required="required" aria-required="true" name="" id="">
-                    <option value=""></option>
-                </select>
-			</div>
-			<div class="col-12 col-lg-6 form-group">
-				<label for="tipo-modalidad">Innovación:</label>
-				<select class="form-control select required" required="required" aria-required="true" name="" id="">
-                    <option value=""></option>
-                </select>
-			</div>
-			<div class="col-12  form-group">
-				<label for="n-solicitud">Comentarios:</label>
-				<textarea class="form-control text required" presence="true" maxlength="100000" required="required" aria-required="true" name="" id=""></textarea>
-			</div>
-		</div>
+		</form>
+
+
 	</div>
-	<hr />
-	<div class="mb-5 col-12">
-		<button name="button" type="button" (click)="change()" class="btn btn btn-success float-right"><i class="fa fa-save"></i> GUARDAR</button>
-	</div>
-</div>
