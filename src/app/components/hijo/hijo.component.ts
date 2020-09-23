@@ -25,27 +25,25 @@ export class HijoComponent implements OnInit {
   
   fields: FormlyFieldConfig[] = [
     {
-      fieldGroupClassName: 'display-flex',
+      fieldGroupClassName: 'row mb-5',
       fieldGroup: [
         {
           className: 'col-12 col-lg-6 form-group',
-          type: 'input',
-          key: 'firstName',
-          templateOptions: {
-            label: 'First Name',
-          },
-        },
-        {
-          className: 'col-12 col-lg-6 form-group',
-          type: 'input',
-          key: 'lastName',
-          templateOptions: {
-            label: 'Last Name',
-          },
-          expressionProperties: {
-            'templateOptions.disabled': '!model.firstName',
-          },
-        },
+      key: 'Select',
+      type: 'select',
+      templateOptions: {
+        label: 'Select',
+        placeholder: 'Placeholder',
+        description: 'Description',
+        required: true,
+        options: [
+          { value: 1, label: 'Option 1'  },
+          { value: 2, label: 'Option 2'  },
+          { value: 3, label: 'Option 3'  },
+          { value: 4, label: 'Option 4'  },
+        ],
+      },
+    },
       ],
     },
     {
