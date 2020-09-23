@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormlyFormOptions } from '@ngx-formly/core';
+import { FormlyFieldConfig, FormlyFormOptions } from '@ngx-formly/core';
 
 @Component({
   selector: 'app-hijo',
@@ -9,19 +9,16 @@ import { FormlyFormOptions } from '@ngx-formly/core';
 })
 export class HijoComponent implements OnInit {
   @Input() solicitud: {titulo: string};
+  @Output() selected = new EventEmitter<string>();
 
   form = new FormGroup({});
   model: any = {};
   options: FormlyFormOptions = {};
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
- @Output() selected = new EventEmitter<string>();
+  constructor() {}
+  ngOnInit() { }
  
- change() {
+  change() {
     this.selected.emit(this.solicitud.titulo);
   }
   
@@ -31,7 +28,7 @@ export class HijoComponent implements OnInit {
       fieldGroupClassName: 'display-flex',
       fieldGroup: [
         {
-          className: 'flex-1',
+          className: 'col-12 col-lg-6 form-group',
           type: 'input',
           key: 'firstName',
           templateOptions: {
@@ -39,7 +36,7 @@ export class HijoComponent implements OnInit {
           },
         },
         {
-          className: 'flex-1',
+          className: 'col-12 col-lg-6 form-group',
           type: 'input',
           key: 'lastName',
           templateOptions: {
@@ -58,7 +55,7 @@ export class HijoComponent implements OnInit {
       fieldGroupClassName: 'display-flex',
       fieldGroup: [
         {
-          className: 'flex-2',
+          className: 'col-12 col-lg-6 form-group',
           type: 'input',
           key: 'street',
           templateOptions: {
@@ -66,7 +63,7 @@ export class HijoComponent implements OnInit {
           },
         },
         {
-          className: 'flex-1',
+          className: 'col-12 col-lg-6 form-group',
           type: 'input',
           key: 'cityName',
           templateOptions: {
@@ -74,7 +71,7 @@ export class HijoComponent implements OnInit {
           },
         },
         {
-          className: 'flex-1',
+          className: 'col-12 col-lg-6 form-group',
           type: 'input',
           key: 'zip',
           templateOptions: {
